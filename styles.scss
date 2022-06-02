@@ -1,0 +1,235 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap");
+
+//| variables
+$Pink: hsl(322, 100%, 66%);
+$Light-Pink: hsl(321, 100%, 78%);
+$Light-Red: hsl(0, 100%, 63%);
+$Dark-Cyan: hsl(192, 100%, 9%);
+$Pale-Blue: hsl(207, 100%, 98%);
+$OpenSans: "Open Sans", sans-serif;
+$Poppins: "Poppins", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;  
+}
+
+//|Navbar
+.navbar {
+  //   background: teal;
+  padding: 2rem 3rem;
+  .logo img {
+    height: 30px;
+    @media screen and (max-width: 920px) {
+      height: 20px;
+    }
+  }
+  .try_now a {
+    // cursor: pointer;
+    background: transparent;
+    border: 1px solid $Pink;
+    border-radius: 30px;
+    color: $Pink;
+    padding: 0.5rem 1.5rem;
+    @media screen and (max-width: 920px) {
+      padding: 0.3rem 0.8rem;
+      font-size: 0.8rem;
+    }
+  }
+  @media screen and (max-width: 920px) {
+    padding: 2rem 1rem;
+  }
+}
+
+//| Hero
+.hero {
+  padding-top: 5rem;
+  @media screen and (max-width: 920px) {
+    padding-top: 2rem;
+  }
+  h1 {
+    font-family: $Poppins;
+    font-size: clamp(1.5rem, 3rem, 3.4vw);
+    text-align: center;
+    // white-space:nowrap;
+  }
+  p {
+    font-family: $OpenSans;
+    @media screen and (max-width: 920px) {
+      width: 100%;
+      font-size: 0.8rem;
+    }
+  }
+  button {
+    background: $Pink;
+    color: whitesmoke;
+    padding: 1rem 4rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    // font-weight: bold;
+    font-family: $Poppins;
+    box-shadow: 1px 5px 5px rgba(0, 0, 0, 0.164);
+    @media screen and (max-width: 920px) {
+      padding: 0.8rem 3rem;
+    }
+  }
+}
+
+.numbers {
+  // background-color: teal;
+  padding: 5rem 0;
+  img {
+    height: 2rem;
+    @media screen and (max-width: 920px) {
+      height: 1.5rem;
+    }
+  }
+  h1 {
+    font-family: $Poppins;
+    font-size: 4em;
+    @media screen and (max-width: 920px) {
+      font-size: 3em;
+    }
+  }
+  span {
+    font-family: $OpenSans;
+    font-size: 1rem;
+    white-space: nowrap;
+    color: $Dark-Cyan;
+  }
+  @media screen and (max-width: 920px) {
+    flex-flow: column;
+    gap: 4rem;
+  }
+}
+
+.growth,
+.conversations,
+.users {
+  padding: 5rem 2rem;
+  overflow: hidden;
+  h1 {
+    font-family: $Poppins;
+    font-size: 2rem;
+    @media screen and (max-width: 920px) {
+      text-align: center;
+      font-size: 1.5rem;
+    }
+  }
+  p {
+    font-family: $OpenSans;
+    font-size: 1em;
+    margin-top: 1rem;
+    width: 30vw;
+    @media screen and (max-width: 920px) {
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+    }
+  }
+  img {
+    height: 30rem;
+    object-fit: contain;
+
+    @media screen and (max-width: 920px) {
+      height: 20rem;
+    }
+  }
+  @media screen and (max-width: 920px) {
+    flex-flow: column-reverse;
+  }
+}
+@media screen and (max-width: 920px) {
+  .conversations {
+    flex-flow: column;
+  }
+}
+
+.getStarted {
+  height: 50vh;
+  h1 {
+    font-size: 2rem;
+    font-family: $Poppins;
+  }
+  button {
+    background: $Pink;
+    padding: 1rem 5rem;
+    border-radius: 50px;
+    font-family: $OpenSans;
+    color: whitesmoke;
+  }
+}
+
+footer {
+  background: $Dark-Cyan;
+  color: white;
+  padding: 5rem;
+  @media screen and (max-width: 920px) {
+    padding: 1.5rem;
+  }
+  svg {
+    fill: white !important;
+  }
+  .social {
+    img {
+      height: 30px;
+      fill: white !important;
+      @media screen and (max-width: 920px) {
+        height: 20px;
+      }
+    }
+  }
+  .left {
+    padding: 0 2rem;
+    p {
+      font-family: $OpenSans;
+      font-size: 0.8rem;
+      width: 20rem;
+    }
+    @media screen and (max-width: 920px) {
+      padding: 0;
+    }
+  }
+  .right {
+    h1 {
+      font-family: $Poppins;
+    }
+    p {
+      font-family: $OpenSans;
+      font-size: 0.8rem;
+      width: 20rem;
+    }
+    .subscribe {
+      input {
+        height: 2.5em;
+        // width: 20em;
+        border-radius: 5px;
+        @media screen and (max-width: 920px) {
+          width: 80vw;
+        }
+      }
+      button {
+        background: $Light-Pink;
+        padding: 0.5rem 2rem;
+        border-radius: 5px;
+        @media screen and (max-width: 920px) {
+          align-self: flex-end;
+        }
+      }
+      @media screen and (max-width: 920px) {
+        flex-flow: column;
+        align-items: start;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 920px) {
+  footer > div {
+    flex-flow: column-reverse;
+    gap: 5rem;
+  }
+}
