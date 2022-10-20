@@ -400,10 +400,6 @@ footer .right .subscribe {
   width: 100%;
 }
 
-footer .right .subscribe label {
-  display: none;
-}
-
 footer .right .subscribe input {
   height: 2.5em;
   border: none;
