@@ -12,8 +12,8 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Huddle | Home</title>    
-    
+    <title>Huddle | Home</title>
+
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -22,9 +22,9 @@
         <img src="./images/logo.svg" alt="Logo" />
       </div>
       <div class="try_now">
-        <a href="">
+        <div class="a">
           <button>Try It Free</button>
-        </a>
+        </div>
       </div>
     </nav>
     <main>
@@ -38,9 +38,9 @@
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
         </p>
-        <a class="herlet mt-5" href="">
+        <div class="herlet mt-5">
           <button>Get Started For Free</button>
-        </a>
+        </div>
         <img class="herletImg mt-20" src="./images/screen-mockups.svg" alt="" />
       </div>
       <!-- stats  -->
@@ -123,7 +123,9 @@
       <!-- get Started -->
       <div class="getStarted flex flex-col justify-center items-center">
         <h1 class="gstart text-center mb-10">Ready To Build Your Community?</h1>
-        <a class="gstart" href=""><button>Get Started Free</button></a>
+        <div class="gstart">
+          <button>Get Started Free</button>
+        </div>
       </div>
       <img class="grow-wv-1" src="./images/bg-footer-top-desktop.svg" alt="" />
     </main>
@@ -175,7 +177,8 @@
             newsletter. We'll never send you spam or pass on your email address.
           </p>
           <div class="rgt subscribe flex items-center gap-x-10">
-            <label for="Email"> <input type="email" id="Email" /></label>
+            <label for="Email"></label>
+            <input type="email" id="Email" />
             <button>Subscribe</button>
           </div>
         </div>

@@ -101,7 +101,7 @@
   }
 }
 
-.navbar .try_now a {
+.navbar .try_now .a {
   background: transparent;
   border: 1px solid #ff52bf;
   border-radius: 30px;
@@ -109,13 +109,13 @@
   padding: 0.5rem 1.5rem;
 }
 
-.navbar .try_now a button {
+.navbar .try_now .a button {
   font-family: "Open Sans", sans-serif;
   font-size: 0.9rem;
 }
 
 @media screen and (max-width: 920px) {
-  .navbar .try_now a {
+  .navbar .try_now .a {
     padding: 0.3rem 0.8rem;
     font-size: 0.8rem;
   }
@@ -398,6 +398,10 @@ footer .right p {
 
 footer .right .subscribe {
   width: 100%;
+}
+
+footer .right .subscribe label {
+  display: none;
 }
 
 footer .right .subscribe input {

@@ -80,7 +80,7 @@ $Poppins: "Poppins", sans-serif;
     }
   }
   .try_now {
-    a {
+    .a {
       // cursor: pointer;
       background: transparent;
       border: 1px solid $Pink;
@@ -267,7 +267,7 @@ footer {
     }
     @media screen and (max-width: 920px) {
       padding: 0;
-    }    
+    }
     .email img {
       object-fit: contain;
     }
@@ -285,6 +285,9 @@ footer {
     }
     .subscribe {
       width: 100%;
+      label {
+        display: none;
+      }
       input {
         height: 2.5em;
         // width: 20em;
